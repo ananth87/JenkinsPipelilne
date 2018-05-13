@@ -1,0 +1,8 @@
+java -jar /root/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ -auth admin:admin123 help
+java -jar /root/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ -auth admin:admin123 list-jobs 
+java -jar /root/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ -auth admin:admin123 get-job test5
+java -jar /root/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ -auth admin:admin123 get-job dockerbuild 
+java -jar /root/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ -auth admin:admin123 build test5 -v -s
+java -jar /root/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ -auth admin:admin123 disable-job test5 -v -s
+java -jar /root/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ -auth admin:admin123 enable-job test5 -v -s
+
